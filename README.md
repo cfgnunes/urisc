@@ -1,6 +1,6 @@
-# uRisc emulator
+# uRISC emulator
 
-Emulador de processador uRISC.
+uRISC stands for Ultimate Reduced Instruction Set Computer.
 
 ## Getting Started
 
