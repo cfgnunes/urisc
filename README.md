@@ -6,7 +6,7 @@ Emulador de processador uRISC.
 
 ### Prerequisites
 
-This section assumes Ubuntu 16.04 (also tested on Ubuntu 22.04), but the procedure is similar for other Linux distributions. The prerequisites to build the source is to install the following packages:
+This section assumes Ubuntu, but the procedure is similar for other Linux distributions. The prerequisites to build the source is to install the following packages:
 
 ```sh
 sudo apt -y install build-essential cmake
@@ -17,10 +17,8 @@ sudo apt -y install build-essential cmake
 To build the project, use:
 
 ```sh
-mkdir build
-cd build
-cmake ..
-cmake --build .
+cmake -Wno-deprecated -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -B build
+cmake --build build --parallel
 ```
 
 ## Built With
