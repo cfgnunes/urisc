@@ -4,21 +4,24 @@ uRISC stands for Ultimate Reduced Instruction Set Computer.
 
 ## Getting Started
 
-### Prerequisites
-
-This section assumes Ubuntu, but the procedure is similar for other Linux distributions. The prerequisites to build the source is to install the following packages:
+You can use [Miniconda](https://docs.conda.io)  to install the required compiler and build tools:
 
 ```sh
-sudo apt -y install build-essential cmake
+conda create -y -n urisc --override-channels -c conda-forge gxx make cmake
+conda activate urisc
 ```
 
-### Build the project
-
-To build the project, use:
+To configure and build the project, run:
 
 ```sh
-cmake -Wno-deprecated -DCMAKE_POLICY_VERSION_MINIMUM=3.5 -B build
+cmake -B build
 cmake --build build --parallel
+```
+
+To run a test, use:
+
+```sh
+./build/urisc test/teste10
 ```
 
 ## Built With
