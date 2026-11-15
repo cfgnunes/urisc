@@ -31,7 +31,7 @@ int main(int argc, char **argv) {
     // Componente: Contador de programa - pc.
     word_t pc{0};
 
-    cout << "Emulador uRisc" << endl
+    cout << "Emulador uRISC" << endl
          << "Autor: Cristiano Fraga G. Nunes <cfgnunes@gmail.com>" << endl
          << endl;
 
