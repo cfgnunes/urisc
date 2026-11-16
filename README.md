@@ -4,7 +4,7 @@ uRISC stands for Ultimate Reduced Instruction Set Computer.
 
 ## Getting Started
 
-You can use [Miniconda](https://docs.conda.io)  to install the required compiler and build tools:
+You can use [Conda](https://docs.conda.io)  to install the required compiler and build tools:
 
 ```sh
 conda create -y -n urisc --override-channels -c conda-forge gxx make cmake
